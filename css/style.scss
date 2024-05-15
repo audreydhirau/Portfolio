@@ -1,0 +1,785 @@
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+// .link{
+//     width: 100%;
+//     height: 100vh;
+//     background: white;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     margin-left: 10vw;
+//     display: none;
+//     ul{
+//         width: 100%;
+//         height: 100vh;
+//         display: flex;align-items: center;
+//         flex-direction: column;
+//         justify-content: center;
+//         gap: 50px;
+
+//         a{
+//             font-size: 2rem;
+//         }
+//     }
+// }
+// .slider{
+//     transform: translateX(-100vw);
+//     display: block;
+// }
+
+*{
+    background: #000;
+}
+.mobile-nav{
+    
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    h1{color: white;}
+}
+.hamburger{
+    z-index: 2;
+    border: 2px solid orange;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+
+    .line{
+        height: 2px;
+        width: 70%;
+        background: orange;
+    
+
+}
+}
+
+
+.pc-nav{
+    
+    display: none !important;
+    background-color: transparent;
+    position: fixed;   
+    color: white;
+    border-bottom: 2px solid white;
+    left: 4%;
+    display: flex;
+     justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    
+    ul{
+        // position: fixed;
+        display: flex;
+        gap: 80px;
+        justify-content: right;
+        align-items: right;
+        margin: 10px 4% 0 0;
+        
+
+        a{
+            color: white;
+        }
+
+    }
+   
+}
+.banner{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    color: white;
+    .container{
+        .row{
+            .left{
+                
+                h1{
+                    font-size: 3rem;
+                    font-weight: 700;
+                    color: orange;
+                }
+                // .text{
+                //     width: 45%;
+                // }
+                .btn{
+                    border: 2px solid orange;
+                    color: orange;
+                }
+                .btn:hover{
+                    color: black;
+                    background-color: orange;
+                    border: 2px solid orange;
+                }
+                .btn-1{
+                    // padding-top: 4px;
+                    background: orange;
+                    color: black;
+                    border: none;
+                    padding: 8px 12px;
+                    border-radius: 8%;
+                }
+                .btn-1:hover{
+                    color: orange;
+                    background: transparent;
+                    border: 2px solid orange;
+                }
+                span{
+                    color: orange;
+                }
+            }
+            .right{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img{
+                    height: 20rem;
+                    width: 70%;
+                    border-radius: 30%;
+                    margin-top: 4%;
+                    
+                }
+              
+               
+            }
+        }
+    }
+   
+}
+
+
+.services{
+    margin-top: 10%;
+    gap: 20px;
+    height: 100vh;
+    .container{
+     h3{
+        color: white;
+     }
+     color: orange;
+     .right{
+      
+        .imgs{
+            display: flex;
+           gap: 5px;
+        //    .dig{width: 140%;}
+     }
+    
+      
+     }
+    
+     .btn-2{
+        margin-top: 2%;
+        border: 2px solid orange;
+        color: orange;
+        padding: 10px 15px;
+        border-radius: 5%;
+     }
+     .text-2{
+       
+        width: 100%;
+     }
+    }
+}
+ .resume{
+    margin-top: 52%;
+     height: 100vh;
+     .container{
+         h3{
+             color: white;
+          }
+         .row{
+             .left{
+                 .skills{
+                     h4{
+                         color: orange;
+                     }
+                     .boxs{
+                         display: flex;
+                         flex-direction: column;
+                         p{
+                             color: white;
+                         }
+                         .box{
+                             height: 10px;
+                             width: 20rem;
+                             background: rgba(255, 166, 0, 0.459);
+                             border-radius: 20px;
+                          .box-1{
+                             height: 10px;
+                             width: 17rem;
+                             background: orange;
+                             border-radius: 20px;
+                          }
+                         }
+                     }
+                 }
+             }
+             .right{
+                 .skills{
+                     h4{
+                         color: orange;
+                     }
+                     .boxs{
+                         display: flex;
+                         flex-direction: column;                      
+                         p{
+                             color: white;
+                         }
+                         .box{
+                             height: 10px;
+                             width: 20rem;
+                             background: rgba(255, 166, 0, 0.459);
+                             border-radius: 20px;
+                          .box-1{
+                             height: 10px;
+                             width: 17rem;
+                             background: orange;
+                             border-radius: 20px;
+                          }
+                         }
+                     }
+                 }
+             }
+         }
+     }
+ }
+ .about{
+    margin-bottom: -2rem;
+    height: 100vh;
+    .container{
+        h3{
+            color: white;
+         }
+        // display: flex;
+        // align-items: center;
+       .row{
+       display: flex;
+        .left{
+            img{
+                height: 20rem;
+                width: 100%;
+                
+            }
+           
+        }
+        .right{
+            display: flex !important;
+            p{
+             border: 2px solid orange;
+             color: orange;
+                display: flex;
+             text-align: center;
+             justify-content: right;
+            //   margin-left: 50%;
+            //  padding-bottom: 80%;
+        }
+           
+            
+        }
+       }
+    }
+}
+.projects{
+    margin-top: 30%;
+    height: 100vh;
+    .container{
+        h3{
+            color: white;
+            margin-left: 30px;
+            margin-bottom: 2%;
+        }
+        .row{
+            display: flex;
+            justify-content: space-around;
+            .card{
+                background-color: orange;
+                text-align: center;
+                color: white;
+                display: flex;
+                align-items: center;
+                border-radius: 20px;
+                width: 300px;
+                margin-bottom: 3%;
+                h1{
+                    background-color: orange;
+                }
+                h4{
+                    background-color: orange;
+                }
+                button{
+                    a{
+                        text-decoration: none;
+                        color: white;
+                    }
+                    color: white;
+                    border: none;
+                    width: 30%;
+                    padding: 5px;
+                }
+                button:hover{
+                    color: white;
+                    border: 2px solid white;
+                    background-color: orange;
+                    width: 35%;
+                }
+
+
+            }
+            .card:hover{
+                padding: 30px;
+            }
+
+        }
+    }
+}
+.contact{
+    margin-top: 55%;
+    height: 100vh;
+    .container{
+        h3{
+            color: white;
+        }
+        p{
+            color: orange;
+        }
+        .details{
+            // display: flex;
+            // justify-content: space-around;
+        .icons2{
+            margin-top: 5%;
+            display: flex;
+            gap: 20px;
+            img{
+                height: 25px;
+                width: 30px;
+            }
+        }
+        .copy{
+            margin-top: 2%;
+            height: 1rem;
+            width: 100%;
+            background: orange;
+
+           p{ color: white;
+            text-align: center;
+           }
+        }
+    }
+}
+  
+}
+
+
+
+
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 568px) {  
+
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .mobile-nav{display: none;}
+    .pc-nav{
+        display: block !important;
+        background-color: transparent;
+        position: fixed;   
+        color: white;
+        border-bottom: 2px solid white;
+        left: 4%;
+        display: flex;
+         justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        
+        ul{
+            // position: fixed;
+            display: flex;
+            gap: 80px;
+            justify-content: right;
+            align-items: right;
+            margin: 10px 4% 0 0;
+            
+    
+            a{
+                color: white;
+            }
+    
+        }
+       
+    }
+    .banner{
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        background-color: #000;
+        color: white;
+        .container{
+            .row{
+                .left{
+                    
+                    h1{
+                        font-size: 3rem;
+                        font-weight: 700;
+                        color: orange;
+                    }
+                    // .text{
+                    //     width: 45%;
+                    // }
+                    .btn{
+                        border: 2px solid orange;
+                        color: orange;
+                    }
+                    .btn:hover{
+                        color: black;
+                        background-color: orange;
+                        border: 2px solid orange;
+                    }
+                    .btn-1{
+                        // padding-top: 4px;
+                        background: orange;
+                        color: black;
+                        border: none;
+                        padding: 8px 12px;
+                        border-radius: 8%;
+                    }
+                    .btn-1:hover{
+                        color: orange;
+                        background: transparent;
+                        border: 2px solid orange;
+                    }
+                    span{
+                        color: orange;
+                    }
+                }
+                .right{
+                    img{
+                        height: 20rem;
+                        width: 70%;
+                        border-radius: 50%;
+                        
+                    }
+                  
+                   
+                }
+            }
+        }
+       
+    }
+    
+    .about{
+        margin-bottom: -2rem;
+        height: 100vh;
+        .container{
+            h3{
+                color: white;
+             }
+            // display: flex;
+            // align-items: center;
+           .row{
+           display: flex;
+            .left{
+                img{
+                    height: 20rem;
+                    width: 70%;
+                    
+                }
+               
+            }
+            .right{
+                display: flex !important;
+                p{
+                 border: 2px solid orange;
+                 color: orange;
+                    display: flex;
+                 text-align: center;
+                 justify-content: right;
+                 align-items: center;
+                //   margin-left: 50%;
+                //  padding-bottom: 80%;
+            }
+               
+                
+            }
+           }
+        }
+    }
+    .services{
+        margin-top: 0%;
+        gap: 20px;
+        height: 100vh;
+        .container{
+         h3{
+            color: white;
+         }
+         color: orange;
+         .imgs{
+            display: flex;
+           gap: 5px;
+          
+         }
+        
+         .btn-2{
+            margin-top: 2%;
+            border: 2px solid orange;
+            color: orange;
+            padding: 10px 15px;
+            border-radius: 5%;
+         }
+         .text-2{
+            width: 70%;
+         }
+        }
+    }
+     .resume{
+  margin-top: 0%;
+         height: 100vh;
+         .container{
+             h3{
+                 color: white;
+              }
+             .row{
+                 .left{
+                     .skills{
+                         h4{
+                             color: orange;
+                         }
+                         .boxs{
+                             display: flex;
+                             flex-direction: column;
+                             p{
+                                 color: white;
+                             }
+                             .box{
+                                 height: 10px;
+                                 width: 20rem;
+                                 background: rgba(255, 166, 0, 0.459);
+                                 border-radius: 20px;
+                              .box-1{
+                                 height: 10px;
+                                 width: 17rem;
+                                 background: orange;
+                                 border-radius: 20px;
+                              }
+                             }
+                         }
+                     }
+                 }
+                 .right{
+                     .skills{
+                         h4{
+                             color: orange;
+                         }
+                         .boxs{
+                             display: flex;
+                             flex-direction: column;
+                      
+                             p{
+                                 color: white;
+                             }
+                             .box{
+                                 height: 10px;
+                                 width: 20rem;
+                                 background: rgba(255, 166, 0, 0.459);
+                                 border-radius: 20px;
+                              .box-1{
+                                 height: 10px;
+                                 width: 17rem;
+                                 background: orange;
+                                 border-radius: 20px;
+                              }
+                             }
+                         }
+                     }
+                 }
+             }
+         }
+     }
+    .projects{
+        margin-top: 0%;
+        height: 100vh;
+        .container{
+            h3{
+                color: white;
+                margin-left: 30px;
+                margin-bottom: 2%;
+            }
+            .row{
+                display: flex;
+                justify-content: space-around;
+                .card{
+                    background-color: orange;
+                    text-align: center;
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    border-radius: 20px;
+                    width: 300px;
+                    margin-bottom: 3%;
+                    h1{
+                        background-color: orange;
+                    }
+                    h4{
+                        background-color: orange;
+                    }
+                    button{
+                        a{
+                            text-decoration: none;
+                            color: white;
+                        }
+                        color: white;
+                        border: none;
+                        width: 30%;
+                        padding: 5px;
+                    }
+                    button:hover{
+                        color: white;
+                        border: 2px solid white;
+                        background-color: orange;
+                        width: 35%;
+                    }
+    
+    
+                }
+                .card:hover{
+                    padding: 30px;
+                }
+    
+            }
+        }
+    }
+    .contact{
+        margin-top: 0%;
+        height: 100vh;
+        .container{
+            h3{
+                color: white;
+            }
+            p{
+                color: orange;
+            }
+            .details{
+                // display: flex;
+                // justify-content: space-around;
+            .icons2{
+                margin-top: 5%;
+                display: flex;
+                gap: 20px;
+                img{
+                    height: 25px;
+                    width: 30px;
+                }
+            }
+            .copy{
+                margin-top: 2%;
+                height: 1rem;
+                width: 100%;
+                background: orange;
+    
+               p{ color: white;
+                text-align: center;
+               }
+            }
+        }
+    }
+      
+    }
+    
+    
+    
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    
+}
+
+
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+
+/* Set width to make card deck cards 100% width */
+@media (max-width: 950px) { 
+
+}

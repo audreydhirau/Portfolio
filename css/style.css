@@ -1,0 +1,770 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  background: #000;
+}
+
+.mobile-nav {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mobile-nav h1 {
+  color: white;
+}
+
+.hamburger {
+  z-index: 2;
+  border: 2px solid orange;
+  height: 3rem;
+  width: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hamburger .line {
+  height: 2px;
+  width: 70%;
+  background: orange;
+}
+
+.pc-nav {
+  display: none !important;
+  background-color: transparent;
+  position: fixed;
+  color: white;
+  border-bottom: 2px solid white;
+  left: 4%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.pc-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 80px;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
+  margin: 10px 4% 0 0;
+}
+
+.pc-nav ul a {
+  color: white;
+}
+
+.banner {
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #000;
+  color: white;
+}
+
+.banner .container .row .left h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: orange;
+}
+
+.banner .container .row .left .btn {
+  border: 2px solid orange;
+  color: orange;
+}
+
+.banner .container .row .left .btn:hover {
+  color: black;
+  background-color: orange;
+  border: 2px solid orange;
+}
+
+.banner .container .row .left .btn-1 {
+  background: orange;
+  color: black;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8%;
+}
+
+.banner .container .row .left .btn-1:hover {
+  color: orange;
+  background: transparent;
+  border: 2px solid orange;
+}
+
+.banner .container .row .left span {
+  color: orange;
+}
+
+.banner .container .row .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner .container .row .right img {
+  height: 20rem;
+  width: 70%;
+  border-radius: 30%;
+  margin-top: 4%;
+}
+
+.services {
+  margin-top: 10%;
+  gap: 20px;
+  height: 100vh;
+}
+
+.services .container {
+  color: orange;
+}
+
+.services .container h3 {
+  color: white;
+}
+
+.services .container .right .imgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+}
+
+.services .container .btn-2 {
+  margin-top: 2%;
+  border: 2px solid orange;
+  color: orange;
+  padding: 10px 15px;
+  border-radius: 5%;
+}
+
+.services .container .text-2 {
+  width: 100%;
+}
+
+.resume {
+  margin-top: 52%;
+  height: 100vh;
+}
+
+.resume .container h3 {
+  color: white;
+}
+
+.resume .container .row .left .skills h4 {
+  color: orange;
+}
+
+.resume .container .row .left .skills .boxs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.resume .container .row .left .skills .boxs p {
+  color: white;
+}
+
+.resume .container .row .left .skills .boxs .box {
+  height: 10px;
+  width: 20rem;
+  background: rgba(255, 166, 0, 0.459);
+  border-radius: 20px;
+}
+
+.resume .container .row .left .skills .boxs .box .box-1 {
+  height: 10px;
+  width: 17rem;
+  background: orange;
+  border-radius: 20px;
+}
+
+.resume .container .row .right .skills h4 {
+  color: orange;
+}
+
+.resume .container .row .right .skills .boxs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.resume .container .row .right .skills .boxs p {
+  color: white;
+}
+
+.resume .container .row .right .skills .boxs .box {
+  height: 10px;
+  width: 20rem;
+  background: rgba(255, 166, 0, 0.459);
+  border-radius: 20px;
+}
+
+.resume .container .row .right .skills .boxs .box .box-1 {
+  height: 10px;
+  width: 17rem;
+  background: orange;
+  border-radius: 20px;
+}
+
+.about {
+  margin-bottom: -2rem;
+  height: 100vh;
+}
+
+.about .container h3 {
+  color: white;
+}
+
+.about .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about .container .row .left img {
+  height: 20rem;
+  width: 100%;
+}
+
+.about .container .row .right {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.about .container .row .right p {
+  border: 2px solid orange;
+  color: orange;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.projects {
+  margin-top: 30%;
+  height: 100vh;
+}
+
+.projects .container h3 {
+  color: white;
+  margin-left: 30px;
+  margin-bottom: 2%;
+}
+
+.projects .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.projects .container .row .card {
+  background-color: orange;
+  text-align: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  width: 300px;
+  margin-bottom: 3%;
+}
+
+.projects .container .row .card h1 {
+  background-color: orange;
+}
+
+.projects .container .row .card h4 {
+  background-color: orange;
+}
+
+.projects .container .row .card button {
+  color: white;
+  border: none;
+  width: 30%;
+  padding: 5px;
+}
+
+.projects .container .row .card button a {
+  text-decoration: none;
+  color: white;
+}
+
+.projects .container .row .card button:hover {
+  color: white;
+  border: 2px solid white;
+  background-color: orange;
+  width: 35%;
+}
+
+.projects .container .row .card:hover {
+  padding: 30px;
+}
+
+.contact {
+  margin-top: 55%;
+  height: 100vh;
+}
+
+.contact .container h3 {
+  color: white;
+}
+
+.contact .container p {
+  color: orange;
+}
+
+.contact .container .details .icons2 {
+  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.contact .container .details .icons2 img {
+  height: 25px;
+  width: 30px;
+}
+
+.contact .container .details .copy {
+  margin-top: 2%;
+  height: 1rem;
+  width: 100%;
+  background: orange;
+}
+
+.contact .container .details .copy p {
+  color: white;
+  text-align: center;
+}
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+/* Small devices (landscape phones, 576px and up) */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .mobile-nav {
+    display: none;
+  }
+  .pc-nav {
+    display: block !important;
+    background-color: transparent;
+    position: fixed;
+    color: white;
+    border-bottom: 2px solid white;
+    left: 4%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .pc-nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 80px;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    -webkit-box-align: right;
+        -ms-flex-align: right;
+            align-items: right;
+    margin: 10px 4% 0 0;
+  }
+  .pc-nav ul a {
+    color: white;
+  }
+  .banner {
+    height: 90vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #000;
+    color: white;
+  }
+  .banner .container .row .left h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: orange;
+  }
+  .banner .container .row .left .btn {
+    border: 2px solid orange;
+    color: orange;
+  }
+  .banner .container .row .left .btn:hover {
+    color: black;
+    background-color: orange;
+    border: 2px solid orange;
+  }
+  .banner .container .row .left .btn-1 {
+    background: orange;
+    color: black;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8%;
+  }
+  .banner .container .row .left .btn-1:hover {
+    color: orange;
+    background: transparent;
+    border: 2px solid orange;
+  }
+  .banner .container .row .left span {
+    color: orange;
+  }
+  .banner .container .row .right img {
+    height: 20rem;
+    width: 70%;
+    border-radius: 50%;
+  }
+  .about {
+    margin-bottom: -2rem;
+    height: 100vh;
+  }
+  .about .container h3 {
+    color: white;
+  }
+  .about .container .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .about .container .row .left img {
+    height: 20rem;
+    width: 70%;
+  }
+  .about .container .row .right {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  .about .container .row .right p {
+    border: 2px solid orange;
+    color: orange;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .services {
+    margin-top: 0%;
+    gap: 20px;
+    height: 100vh;
+  }
+  .services .container {
+    color: orange;
+  }
+  .services .container h3 {
+    color: white;
+  }
+  .services .container .imgs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 5px;
+  }
+  .services .container .btn-2 {
+    margin-top: 2%;
+    border: 2px solid orange;
+    color: orange;
+    padding: 10px 15px;
+    border-radius: 5%;
+  }
+  .services .container .text-2 {
+    width: 70%;
+  }
+  .resume {
+    margin-top: 0%;
+    height: 100vh;
+  }
+  .resume .container h3 {
+    color: white;
+  }
+  .resume .container .row .left .skills h4 {
+    color: orange;
+  }
+  .resume .container .row .left .skills .boxs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .resume .container .row .left .skills .boxs p {
+    color: white;
+  }
+  .resume .container .row .left .skills .boxs .box {
+    height: 10px;
+    width: 20rem;
+    background: rgba(255, 166, 0, 0.459);
+    border-radius: 20px;
+  }
+  .resume .container .row .left .skills .boxs .box .box-1 {
+    height: 10px;
+    width: 17rem;
+    background: orange;
+    border-radius: 20px;
+  }
+  .resume .container .row .right .skills h4 {
+    color: orange;
+  }
+  .resume .container .row .right .skills .boxs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .resume .container .row .right .skills .boxs p {
+    color: white;
+  }
+  .resume .container .row .right .skills .boxs .box {
+    height: 10px;
+    width: 20rem;
+    background: rgba(255, 166, 0, 0.459);
+    border-radius: 20px;
+  }
+  .resume .container .row .right .skills .boxs .box .box-1 {
+    height: 10px;
+    width: 17rem;
+    background: orange;
+    border-radius: 20px;
+  }
+  .projects {
+    margin-top: 0%;
+    height: 100vh;
+  }
+  .projects .container h3 {
+    color: white;
+    margin-left: 30px;
+    margin-bottom: 2%;
+  }
+  .projects .container .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .projects .container .row .card {
+    background-color: orange;
+    text-align: center;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 20px;
+    width: 300px;
+    margin-bottom: 3%;
+  }
+  .projects .container .row .card h1 {
+    background-color: orange;
+  }
+  .projects .container .row .card h4 {
+    background-color: orange;
+  }
+  .projects .container .row .card button {
+    color: white;
+    border: none;
+    width: 30%;
+    padding: 5px;
+  }
+  .projects .container .row .card button a {
+    text-decoration: none;
+    color: white;
+  }
+  .projects .container .row .card button:hover {
+    color: white;
+    border: 2px solid white;
+    background-color: orange;
+    width: 35%;
+  }
+  .projects .container .row .card:hover {
+    padding: 30px;
+  }
+  .contact {
+    margin-top: 0%;
+    height: 100vh;
+  }
+  .contact .container h3 {
+    color: white;
+  }
+  .contact .container p {
+    color: orange;
+  }
+  .contact .container .details .icons2 {
+    margin-top: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+  }
+  .contact .container .details .icons2 img {
+    height: 25px;
+    width: 30px;
+  }
+  .contact .container .details .copy {
+    margin-top: 2%;
+    height: 1rem;
+    width: 100%;
+    background: orange;
+  }
+  .contact .container .details .copy p {
+    color: white;
+    text-align: center;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+/* Set width to make card deck cards 100% width */
+/*# sourceMappingURL=style.css.map */

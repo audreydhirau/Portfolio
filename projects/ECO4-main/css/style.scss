@@ -1,0 +1,387 @@
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+// phone styles
+body{
+    font-family: inter;
+}
+
+
+.mobile-nav{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    .hamburger-menu{
+        border: 1px solid green;
+        height: 50px;
+        width: 50px;
+        display: flex;
+         justify-content: center;
+         align-items: center;
+        color: green;
+        flex-direction: column;
+        gap: 7px;
+        .line{
+            background-color: green;
+            height: 2px;
+            width: 70%;
+           
+        }
+    }
+}
+.pc-nav{
+    display: none !important;
+}
+.benefits{
+    
+    .card{
+        padding: 1em;
+        background: rgba(128, 128, 128, 0.34);
+        ol{
+           list-style-type: decimal;
+           padding-left: 1rem;
+        }
+    }
+    .center-items{
+       
+        text-align: center;
+        
+    }
+}
+.banner{
+    background: lightgray;
+    .container{
+        .row{
+            .col-md-6{
+                align-items: center;
+                text-align: center;
+                img{
+                    width: 100%;
+                }
+                h1{
+                    font-weight: bold;
+                    margin: 1rem;
+                }
+                button{
+                    background: green;
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    margin: 1rem;
+                }
+            }
+        }
+    }
+    
+}
+
+.services{
+    background: lightgray;
+    .container{
+        width: 90%;
+        .row{
+            .col-md-4{
+                img{
+                    width: 100%;
+                }
+                h3{
+                    font-weight: bold;
+                }
+
+            }
+        }
+    }
+}
+.green{
+    color: green;
+}
+.image{
+    background-image: url("../images/colleagues-working-together-environment-project\ \(1\)\ 1.png");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    p{
+        width: 50%;
+    }
+    .overlay{
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.308);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+   
+ }
+ .features{
+    .container{
+        .row{
+            padding: 1em;
+            h2{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .col-md-5{
+                background: lightgray;
+                border: 2px solid black;
+                padding: 1rem;
+                border-radius: 20px;
+                ol{
+                    list-style-type: decimal;
+                }
+            }
+        }
+    }
+ }
+ .questions{
+    height: 45vh;
+    .container{
+        .row{
+            .right{
+                background: lightgray;
+                
+                form{
+                    
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding: 2rem;
+
+                   input[type="text"]{
+                    margin-top: 15px;
+                   }
+
+                  
+                }
+            }
+
+        }
+    }
+ }
+ .footer{
+   
+    background: lightgray;
+    text-align: center;
+    padding-top: 2rem;
+    
+    form{
+        display: block;
+        flex-direction: column;
+        text-align: center;
+        input[type="text"]{
+            width: 20rem;
+        }
+      
+        
+    }
+    .green{
+        background: green;
+        color: white;
+        margin-top: 2rem;
+      
+    }
+        .btn{
+            background: green;
+            color: white;
+            border: none;
+            border-radius: 0%;
+           margin-top: 2rem;
+           padding: 5px 35px;
+          
+        }
+    
+ }
+   
+
+
+
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 568px) {  
+
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+    .mobile-nav{
+        display: none;
+    }
+   
+
+.pc-nav{ display: block !important;
+    .flex-container{
+        display: flex;
+        justify-content: space-between;
+        ul{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            gap: 100px;
+            color: green;
+            font-weight: 600px;
+            li{ 
+                button{
+                background: green;
+                color: white;
+                border-radius: 8px;
+                height: 5vh;
+                width: 10vw;
+                border: none;
+            
+            }
+
+            }
+        }
+    }
+   }
+   .benefits{
+    .center-items{
+         #heading-center{text-align: center; margin-bottom: 2em;}
+        text-align: left;
+       
+    }
+   }
+//    banner
+.banner{
+    .container{
+      
+        .row{
+            .col-md-6{
+                display: flex;
+                flex-direction: column;
+                align-items: first baseline;
+                text-align: left;
+                h1{
+                    font-size: x-large;
+                }
+                p{
+                    font-size: small;
+                }
+                button{
+                    justify-content: left;
+                }
+            }
+        }
+    }
+}
+
+}
+  
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    .pc-nav{
+        .flex-container{
+            ul{
+                gap: 100px;
+
+            }
+
+        }
+    }
+    
+}
+
+.features{
+    .left{
+    text-align: left;
+    h2{
+        margin-left: -11rem
+    }
+    .fits{
+        margin-left: -18rem;
+    }
+}
+}
+.banner{
+    p{
+        text-align: left;
+    }
+    .left{
+       text-align: left;
+    }
+}
+
+
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+
+/* Set width to make card deck cards 100% width */
+@media (max-width: 950px) { 
+
+}
